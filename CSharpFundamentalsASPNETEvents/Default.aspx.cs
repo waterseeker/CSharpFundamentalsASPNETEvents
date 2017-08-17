@@ -11,7 +11,13 @@ namespace CSharpFundamentalsASPNETEvents
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            MyButton.Click += MyButton_Click;
+        }
 
+        private void MyButton_Click(object sender, EventArgs e)
+        {
+            //throw new NotImplementedException();
+            MyLabel.Text = "You pushed mah button!";
         }
     }
 }
